@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ bootstrap.load_css() }}
+    <meta charset="UTF-8">
+    <title>Sam Dukes' Portfolio</title>
+    <style>
+        body {
+        background-color: #009FBD;
+        color: #F6F5F5;
+        font-family: helvetica;
+        }
+        .nav-pills > li > a.active {
+        background-color: #F6F5F5 !important;
+        }
+        .border {
+        background-color: white
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center pt-3 pb-1">
+      <a href="/" class="d-flex align-items-center mt-1 mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4" style="color: #F6F5F5"></span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li
+                class="nav-item"><a href="#" class="nav-link active" aria-current="page" style="color: #009FBD;">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="color: #F6F5F5;">Projects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="color: #F6F5F5;">About</a></li>
+      </ul>
+    </header>
+  </div>
+</div>
+{{ bootstrap.load_js() }}
+</body>
+</html>
