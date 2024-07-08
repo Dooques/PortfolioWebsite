@@ -10,8 +10,15 @@
         color: #F6F5F5;
         font-family: helvetica;
         }
+        h2 {
+        text-shadow: 5px 5px 5px #4A249D;
+        }
+        h2 a {
+        color: inherit;
+        text-decoration: inherit;
+        }
         .nav-pills > li > a.active {
-        background-color: #F6F5F5 !important;
+        background-color: #F9E2AF !important;
         }
         .border {
         background-color: white
@@ -30,9 +37,13 @@
 
       <ul class="nav nav-pills">
         <li
-                class="nav-item"><a href="#" class="nav-link active" aria-current="page" style="color: #009FBD;">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" style="color: #F6F5F5;">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" style="color: #F6F5F5;">About</a></li>
+                class="nav-item"><a href="{{ url_for('index') }}" class="nav-link active" aria-current="page"
+                                    style="color: #009FBD;">Home</a></li>
+        <li
+                class="nav-item"><a href="{{ url_for('projects') }}"
+                                    class="nav-link" style="color: #F9E2AF;">
+            Projects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" style="color: #F9E2AF;">About</a></li>
       </ul>
     </header>
   </div>

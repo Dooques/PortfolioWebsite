@@ -1,10 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% include 'header.html' %}
 
-</body>
-</html>
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2"
+    style="color: #F9E2AF"><strong>Projects</strong></h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+             style="background-image: url('static/img/Plane_Take_Off.png');
+                    background-size: cover; background-repeat: no-repeat;
+                    background-position: center center;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
+            style="text-shadow: 5px 5px 5px #4A249D;">
+                <a href="https://github.com/Dooques/Flight-Tracker"
+                target="_blank">Discount Flight Finder</a></h2>
+              <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                     class="rounded-circle border border-white">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+             style="background-image: url('static/img/Tomato_Clock.jpeg');
+                    background-position: center center; background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
+                style="text-shadow: 5px 5px 5px #4A249D;">
+                <a href=""
+                   target="_blank">Pomodoro Timer</a></h2>
+              <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                     class="rounded-circle border border-white">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+             style="background-image: url('static/img/movie_theater.jpeg');
+                    background-position: center center; background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
+            style="text-shadow: 5px 5px 5px #4A249D;">
+                <a href="https://github.com/"
+                   target="_blank">Movie Ratings Website</a></h2>
+              <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                     class="rounded-circle border border-white">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+         style="background-image: url('static/img/telegraph.jpeg');
+                background-position: center center; background-size: cover;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
+            style="text-shadow: 5px 5px 5px #4A249D;">
+                <a href="{{ url_for('morse_converter') }}"
+                target="_blank">Morse Code Converter</a></h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                     class="rounded-circle border border-white">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small></small>
+              </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+{% include 'footer.html' %}
