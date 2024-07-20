@@ -1,110 +1,112 @@
 {% include 'header.html' %}
 
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2"
-    style="color: #F9E2AF"><strong>Projects</strong></h2>
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-             style="background-image: url('static/img/Plane_Take_Off.png');
-                    background-size: cover; background-repeat: no-repeat;
-                    background-position: center center;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
-            style="text-shadow: 5px 5px 5px #4A249D;">
-                <a href="https://github.com/Dooques/Flight-Tracker"
-                target="_blank">Discount Flight Finder</a></h2>
-              <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
-                     class="rounded-circle border border-white">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-             style="background-image: url('static/img/Tomato_Clock.jpeg');
-                    background-position: center center; background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
-                style="text-shadow: 5px 5px 5px #4A249D;">
-                <a href=""
-                   target="_blank">Pomodoro Timer</a></h2>
-              <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
-                     class="rounded-circle border border-white">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-             style="background-image: url('static/img/movie_theater.jpeg');
-                    background-position: center center; background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
-            style="text-shadow: 5px 5px 5px #4A249D;">
-                <a href="https://github.com/"
-                   target="_blank">Movie Ratings Website</a></h2>
-              <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
-                     class="rounded-circle border border-white">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<div class="col">
-    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-         style="background-image: url('static/img/telegraph.jpeg');
-                background-position: center center; background-size: cover;">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
-            style="text-shadow: 5px 5px 5px #4A249D;">
-                <a href="{{ url_for('morse_converter') }}"
-                target="_blank">Morse Code Converter</a></h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
-                     class="rounded-circle border border-white">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <strong style="text-shadow: 2px 2px 5px #4A249D">GitHub</strong>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small></small>
-              </li>
-            </ul>
-        </div>
-    </div>
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center pt-3 pb-1">
+    <a href="/" class="d-flex align-items-center
+    mt-1 mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4" style="color: #F6F5F5"></span>
+    </a>
+    <ul class="nav nav-pills" style="position: relative">
+        <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link" aria-current="page"
+                                style="color: #F9E2AF;">Home</a></li>
+        <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link active"
+                                style="color: #009FBD;">Projects</a></li>
+    </ul>
+  </header>
 </div>
+
+<div class="container px-4 py-5" id="custom-cards">
+  <h1 class="pb-2"><strong>Projects</strong></h1>
+  <div class="card-deck g-4 py-5">
+    <div class="card">
+      <img src="static/img/flight_tracker.png" class="card-img-top"
+           alt="Plane taking off.">
+      <div class="card-body">
+        <h2 class="display-6 lh-1 fw-bold">
+            <a href="https://github.com/Dooques/Flight-Tracker"
+            target="_blank">Discount Flight Finder</a></h2>
+        <p>Find discount flights from across the world.</p>
+      </div>
+      <div class="card-footer">
+        <ul class="d-flex align-self-end list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                   class="rounded-circle border border-white">
+              <a href="https://github.com/Dooques/Flight-Tracker"
+                 target="_blank">
+                <strong>GitHub</strong></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="card">
+      <img src="static/img/pomodoro_timer.png" class="card-img-top"
+           alt="Tomato Clock">
+      <div class="card-body">
+        <h2 class="display-6 lh-1 fw-bold">
+            <a href="https://github.com/Dooques/Pomodoro-Project"
+            target="_blank">Pomodoro Timer</a></h2>
+        <p>Use this to keep your study and working sessions more efficient.</p>
+      </div>
+      <div class="card-footer">
+        <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                   class="rounded-circle border border-white">
+              <a href="https://github.com/Dooques/Pomodoro-Project"
+                 target="_blank">
+                <strong>GitHub</strong></a>
+            </li>
+          </ul>
+          </div>
+    </div>
+
+    <div class="card">
+      <img src="static/img/achievement_collector.png" class="card-img-top"
+           alt="Desk with gaming system and trophies.">
+      <div class="card-body">
+        <h2 class="display-6 lh-1 fw-bold">
+            <a href="https://github.com/Dooques/achievement_collector"
+            target="_blank">Achievement Collector</a></h2>
+        <p>Collect all your achievements and trophies across consoles in one place.</p>
+      </div>
+      <div class="card-footer">
+        <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                   class="rounded-circle border border-white">
+              <a href="https://github.com/Dooques/achievement_collector"
+                 target="_blank">
+                <strong>GitHub</strong></a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="static/img/morse_converter.png" class="card-img-top"
+           alt="Morse Code Machine">
+      <div class="card-body">
+        <div class="card-title">
+          <h2 class="display-6 lh-1 fw-bold">
+              <a href="{{ url_for('morse_converter') }}"
+              target="_blank">Morse Converter</a></h2>
+          <p>Convert text to morse code and vice versa.</p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+            <img src="static/img/github.png" alt="Bootstrap" width="32" height="32"
+                 class="rounded-circle border border-white">
+            <a href="https://github.com/Dooques/Morse-Conversion"
+               target="_blank">
+              <strong>GitHub</strong></a>
+          </li>
+        </ul>
+      </div>
+    </div>
 </div>
 {% include 'footer.html' %}

@@ -1,0 +1,71 @@
+{% include "header.html" %}
+<body>
+<!--Header-->
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center pt-3 pb-1">
+      <a href="/" class="d-flex align-items-center
+      mt-1 mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4" style="color: #F6F5F5"></span>
+      </a>
+      <ul class="nav nav-pills" style="position: relative">
+          <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link active" aria-current="page"
+                                  style="color: #009FBD;">Home</a></li>
+          <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link"
+                                  style="color: #F9E2AF;">Projects</a></li>
+      </ul>
+    </header>
+</div>
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <h1 style="color: #F9E2AF">Morse Converter</h1>
+      </a>
+    </header>
+  </div>
+<div class="container">
+    <p>When typing in Morse, please separate the characters by spaces, and spaces between words by a forward slash.</p>
+    <p>"hello there" = .... . .-.. .-.. --- / - .... . .-. .</p>
+</div>
+<div class="container">
+  <form method="post">
+      <label>Text to Convert</label>
+      <div>
+          {% if placeholder %}
+          <textarea class="form-control" placeholder="{{ placeholder }}" id="placeholder" rows="3"
+                    name="to_convert"></textarea>
+          {% endif%}
+          {% if to_convert %}
+          <textarea class="form-control" placeholder="{{ placeholder }}" id="to_convert" rows="3"
+                    name="to_convert">{{ to_convert }}</textarea>
+          {% endif %}
+          <div>
+              <br>
+          <input class="form-control" type="submit" value="Ok">
+              <br>
+          </div>
+      </div>
+      <div>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+      <p style="color: red">{{ message }}</p>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+      </div>
+      <br>
+      <div>
+          <label>Converted Text</label>
+
+          <textarea class="form-control" id="textarea-morse" rows="3" readonly>{{ converted_string }}</textarea>
+
+      </div>
+  </form>
+</div>
+<!--Footer-->
+
+</body>
+</html>

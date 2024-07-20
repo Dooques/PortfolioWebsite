@@ -27,7 +27,7 @@ def pomodoro_timer():
     return url_for('index')
 
 
-@app.route('/morse-converter')
+@app.route('/morse-converter', methods=['GET', 'POST'])
 def morse_converter():
     placeholder = "Type some text into the box and convert it to Morse Code."
     if request.method == 'POST':

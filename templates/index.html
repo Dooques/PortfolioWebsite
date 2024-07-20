@@ -1,23 +1,36 @@
 {% include "header.html" %}
-<div style="background-color: #009FBD">
-<div class="container col-10 pt-5 mb-5">
-    <div class="row flex-lg-row align-items-center g-5 py-4">
-      <div class=" col-md-12 col-lg-8 text-left px-5">
-        <h1 class="display-5 fw-bold lh-1 mb-4 "
-            style="text-shadow: 5px 5px 5px #4A249D; color: #F9E2AF"
-        >Samuel Dukes</h1>
-        <p class="lead">Hello and welcome to my portfolio! I am an emerging
-            <span class="lead" style="color: #F9E2AF">self-taught developer</span>
-            hoping to catch your eye with some fun and interesting projects.</p>
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center pt-3 pb-1">
+      <a href="/" class="d-flex align-items-center
+      mt-1 mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4" style="color: #F6F5F5"></span>
+      </a>
+      <ul class="nav nav-pills" style="position: relative">
+          <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link active" aria-current="page"
+                                  style="color: #009FBD;">Home</a></li>
+          <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link"
+                                  style="color: #F9E2AF;">Projects</a></li>
+      </ul>
+    </header>
+</div>
+<div class="container">
+    <div class="row flex-md-row align-items-center g-5 py-4">
+        <div class=" col-sm-10 col-md-8 text-left">
+            <h1 class="display-5 fw-bold lh-1 mb-4 ">Samuel Dukes</h1>
+            <p class="lead">Hello and welcome to my portfolio! I am an emerging
+                <span class="lead" style="color: #F9E2AF">self-taught developer</span>
+                hoping to catch your eye with some fun and interesting projects.</p>
       </div>
-      <div class="col-10 col-lg-4">
-        <img src="static/img/Portfolio Logo.png" class="d-block img-fluid"
-             alt="Cartoon Face on white background"
-             height="100" loading="lazy">
-      </div>
+        <div class="col-sm-10 col-md-4">
+            <img src="static/img/Portfolio Logo.png" class="d-block img-fluid"
+                 alt="Cartoon Face on white background"
+                 height="100" loading="lazy">
+        </div>
     </div>
 </div>
-    <br class="my-5">
+<br class="my-5">
 <div class="container col-10 align-items-center my-5">
     <div class="col d-flex flex-wrap justify-content-center align-content-center">
         <img class="border rounded p-2 my-2 mx-4"
@@ -54,14 +67,11 @@
          height="80">
     </div>
 </div>
-    <br class="mb-5">
-<div class="container m-5 mt-5 p-5 mb-5">
-    <h2 class="fw-bold" style="color: #F9E2AF; text-shadow: 5px 5px 5px #4A249D; color: #F9E2AF">About Me</h2>
-    <p class="lead">Thanks for visiting my portfolio, I'm still new on the developer scene, having just gone through the
-        100
-        days
-    of code course by Angela Yu. My goals are to make connections with talented people and create some interesting
-        projects. </p>
-</div>
+<br class="mb-5">
+<div class="container pb-4">
+    <h2 class="fw-bold">About Me</h2>
+    <p class="lead">Thanks for visiting my portfolio, I'm still new on the software development scene,
+        having just gone through the 100 days of code course by Angela Yu. My goals are to make connections
+        with talented people and create some useful projects. </p>
 </div>
 {% include "footer.html" %}
