@@ -4,7 +4,6 @@ import json
 import os
 from pomodoro_timer.pomodoro_timer_class import PomodoroTimer
 from morse_converter import Morse
-from achievement_collector import steam_api
 
 
 app = Flask(__name__)
