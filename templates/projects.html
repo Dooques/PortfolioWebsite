@@ -18,6 +18,9 @@
 
 <div class="container px-4 py-5" id="custom-cards">
   <h1 class="pb-2"><strong>Projects</strong></h1>
+  <p>Some of these projects are still under construction, come back again later if they're not functioning right now
+    . In the meantime, check out my Github links, the projects do function independently and you are welcome to make
+    a pull request.</p>
   <div class="card-deck g-4 py-5">
     <div class="card">
       <img src="static/img/flight_tracker.png" class="card-img-top"
@@ -68,7 +71,7 @@
            alt="Desk with gaming system and trophies.">
       <div class="card-body">
         <h2 class="display-6 lh-1 fw-bold">
-            <a href="https://github.com/Dooques/achievement_collector"
+            <a href="{{ url_for('achievement_collector') }}"
             target="_blank">Achievement Collector</a></h2>
         <p>Collect all your achievements and trophies across consoles in one place.</p>
       </div>

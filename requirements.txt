@@ -11,3 +11,4 @@ pygame~=2.6.0
 pillow~=10.4.0
 pandas~=2.2.2
 gunicorn
+requests
