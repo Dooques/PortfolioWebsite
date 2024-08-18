@@ -3,6 +3,7 @@
 <head>
     {{ bootstrap.load_css() }}
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sam Dukes' Portfolio</title>
     <link rel="icon" type="image/png" href="static/img/favicon.ico">
     <style>
@@ -23,7 +24,7 @@
         text-shadow: 5px 5px 10px #4A249D;
         }
 
-        h2 a {
+        .project-title {
         color: #009FBD;
         text-decoration: None;
         text-shadow: None;
@@ -31,6 +32,11 @@
 
         a {
         text-decoration: None;
+        }
+
+        .project-download {
+        color: #009FBD;
+        text-decoration: underline;
         }
 
         ul {

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, flash
+from flask import Flask, render_template, redirect, url_for, request, flash, send_file, jsonify
 from flask_bootstrap import Bootstrap5
 import json
 import os
@@ -26,6 +26,16 @@ def projects():
 def pomodoro_timer():
     PomodoroTimer().run()
     return url_for('index')
+
+
+@app.route('/download_watermark')
+def download_watermark():
+    return send_file("files/Watermarker Setup.exe")
+
+
+@app.route('/download_pomodoro')
+def download_pomodoro():
+    pass
 
 
 @app.route('/morse-converter', methods=['GET', 'POST'])
