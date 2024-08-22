@@ -12,3 +12,6 @@ pillow~=10.4.0
 pandas~=2.2.2
 gunicorn
 requests
+gdata~=2.0.18
+httplib2~=0.22.0
+google-api-python-client~=2.141.0

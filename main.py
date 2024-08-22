@@ -1,10 +1,11 @@
-from flask import Flask, render_template, redirect, url_for, request, flash, send_file, jsonify
+from flask import Flask, render_template, redirect, url_for, request, flash, send_file
 from flask_bootstrap import Bootstrap5
 import json
 import os
+import datetime
 from pomodoro_timer.pomodoro_timer_class import PomodoroTimer
 from morse_converter import Morse
-
+from blogAPI import get_posts
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
@@ -35,6 +36,22 @@ def download_watermark():
 
 @app.route('/download_pomodoro')
 def download_pomodoro():
+    pass
+
+
+@app.route('/blog')
+def blog():
+    posts = get_posts()['items']
+    for item in posts:
+        date = item['published'].split('T')
+        y_m_d = date[0].split('-')
+        new_date = datetime.datetime(int(y_m_d[0]), int(y_m_d[1]), int(y_m_d[2])).strftime('%d/%m/%Y')
+        item['published'] = new_date
+    return render_template('blog.html', posts=posts)
+
+
+@app.route('/blog_post')
+def post():
     pass
 
 

@@ -1,0 +1,27 @@
+.post-preview {
+background: #F9E2AF;
+padding: 2rem;
+margin: 2rem;
+padding-bottom: none;
+margin-bottom: none;
+border-style: solid;
+border-radius: 30px;
+color: #009FBD;
+}
+
+h2 {
+text-shadow: none;
+color: #009FBD
+}
+
+p a {
+text-decoration: underline;
+color: #009FBD
+}
+
+.author {
+display: flex;
+flex-direction: row;
+justify-items: start;
+margin: 1rem;
+}

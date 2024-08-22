@@ -1,0 +1,94 @@
+body {
+        background-color: #009FBD;
+        color: #F6F5F5;
+        font-family: helvetica;
+        position: relative;
+        }
+
+        h1 {
+        color: #F9E2AF;
+        text-shadow: 5px 5px 10px #4A249D;
+        }
+
+        h2 {
+        color: #F9E2AF;
+        text-shadow: 5px 5px 10px #4A249D;
+        }
+
+        .project-title {
+        color: #009FBD;
+        text-decoration: None;
+        text-shadow: None;
+        }
+
+        a {
+        text-decoration: None;
+        }
+
+        .project-download {
+        color: #009FBD;
+        text-decoration: underline;
+        }
+
+        ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0px;
+        }
+
+        li a {
+        color: #009FBD;
+        text-decoration: None;
+        }
+
+        .contact-text {
+        color: #F6F5F5;
+        }
+
+        #github-link {
+        color: #F6F5F5;
+        }
+
+        .nav-pills > li > a.active {
+        background-color: #F9E2AF !important;
+        color: #4A249D;
+        }
+
+        #rounded-circle {
+        background-color: #F6F5F5;
+        }
+
+        .border {
+        background-color: white
+        }
+
+        .card-deck {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        }
+
+        .card {
+        border: None;
+        background-color: #F9E2AF;
+        }
+
+        .card-body {
+            p {
+            color: #009FBD;
+            }
+        }
+
+        .card-footer {
+        }
+
+        btn {
+        background-color: #F9E2AF;
+        color: #4A249D;
+        }
+
+        .Form {
+        display: grid;
+        grid-template: 2fr 2fr;
+
+        }

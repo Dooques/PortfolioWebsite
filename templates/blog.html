@@ -1,0 +1,44 @@
+{% include 'header.html' %}
+<link rel="stylesheet" href="static/blog_style.css">
+
+
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center pt-3 pb-1">
+    <a href="/" class="d-flex align-items-center
+    mt-1 mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4" style="color: #F6F5F5"></span>
+    </a>
+    <ul class="nav nav-pills" style="position: relative">
+      <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link" aria-current="page"
+                                style="color: #F9E2AF;">Home</a></li>
+      <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link"
+                                style="color: #F9E2AF;">Projects</a></li>
+      <li class="nav-item"><a href="{{ url_for('blog') }}" class="nav-link active"
+                                style="color: #009FBD;">Blog</a></li>
+    </ul>
+  </header>
+</div>
+
+{% for post in posts %}
+
+<div class="container">
+  <div class="post-preview">
+      <a href="{{ post.url }}">
+          <h2 class="post-title">{{ post['title'] }}</h2>
+          <h3 class="post-subtitle">{{ post['subtitle'] }}</h3>
+      </a>
+    <div class="author">
+      <p class="post-meta">
+        <img src="{{ post.author.image.url }}" alt="Bootstrap" width="32" height="32"
+                   class="rounded-circle border border-white">
+        Posted by
+          <a href="#!">{{ post['author']['displayName'] }}</a>
+          on {{ post.published }}
+      </p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% include 'footer.html' %}
