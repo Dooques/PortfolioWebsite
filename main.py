@@ -50,9 +50,14 @@ def blog():
     return render_template('blog.html', posts=posts)
 
 
-@app.route('/blog_post')
-def post():
-    pass
+@app.route('/post/<blog_id>')
+def post(blog_id):
+    blog_posts = get_posts()['items']
+    blog_post = ""
+    for item in blog_posts:
+        if blog_id in item['id']:
+            blog_post = item
+    return render_template('blog_post.html', blog_post=blog_post)
 
 
 @app.route('/morse-converter', methods=['GET', 'POST'])

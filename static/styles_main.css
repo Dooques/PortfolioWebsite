@@ -1,94 +1,172 @@
-body {
-        background-color: #009FBD;
-        color: #F6F5F5;
-        font-family: helvetica;
-        position: relative;
-        }
+    body {
+    background-color: #009FBD;
+    color: #F6F5F5;
+    font-family: helvetica;
+    font-size: 1.1em;
+    }
 
-        h1 {
-        color: #F9E2AF;
-        text-shadow: 5px 5px 10px #4A249D;
-        }
+    h1 {
+    color: #F9E2AF;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #4A249D;
+    width: auto;
+    }
 
-        h2 {
-        color: #F9E2AF;
-        text-shadow: 5px 5px 10px #4A249D;
-        }
+    .title {
+    color: #F9E2AF;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #4A249D;
+    }
 
-        .project-title {
-        color: #009FBD;
-        text-decoration: None;
-        text-shadow: None;
-        }
+    .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
 
-        a {
-        text-decoration: None;
+    .bio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+        p {
+        width: 70%;
         }
-
-        .project-download {
-        color: #009FBD;
-        text-decoration: underline;
+        img {
+        height: 300px;
+        width: 300px;
         }
+    }
 
-        ul {
-        list-style-type: none;
-        text-align: center;
-        padding: 0px;
+    p .highlight {
+    color: #F9E2AF;
+    font-weight: bold;
+    }
+
+    a {
+    text-decoration: None;
+    }
+
+    .project {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color: #F9E2AF;
+    margin: 20px 0px;
+    }
+
+    .item {
+    flex: 1 1 230px;
+    }
+
+    .project p {
+    color: #3D2C1E;
+    padding:0px 10px
+    }
+
+    .project-text {
+    height: 280px
+    }
+
+    .project h4 {
+    padding: 20px 10px;
+    color: #3D2C1E;
+    }
+
+    @media (min-width:1000px) {
+        .project img {
+            border-radius: 0px 25px 25px 0px;
+            height: 280px;
         }
+    }
 
-        li a {
-        color: #009FBD;
-        text-decoration: None;
+    @media (max-width:999px) {
+        .project img {
+            width: 580px;
+            border-radius: 0px 0px 25px 25px;
         }
-
-        .contact-text {
-        color: #F6F5F5;
+        .project {
+            width: 580px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        #github-link {
-        color: #F6F5F5;
+        .bio img {
+            width: 200px;
+            height: 200px;
         }
+    }
 
-        .nav-pills > li > a.active {
-        background-color: #F9E2AF !important;
-        color: #4A249D;
+    @media (max-width:600px) {
+        .project img {
+            width: 400px;
+            border-radius: 0px 0px 25px 25px;
         }
-
-        #rounded-circle {
-        background-color: #F6F5F5;
+        .project {
+            width: 400px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .border {
-        background-color: white
+        .project-text {
+        height: 300px;
         }
+    }
 
-        .card-deck {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        }
+    ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    }
 
-        .card {
-        border: None;
-        background-color: #F9E2AF;
-        }
+    li a {
+    color: #009FBD;
+    text-decoration: None;
+    }
 
-        .card-body {
-            p {
-            color: #009FBD;
-            }
-        }
+    .contact-text {
+    color: #F6F5F5;
+    }
 
-        .card-footer {
-        }
+    #github-link {
+    color: #F6F5F5;
+    }
 
-        btn {
-        background-color: #F9E2AF;
-        color: #4A249D;
-        }
+    .nav-pills > li > a.active {
+    background-color: #F9E2AF !important;
+    color: #4A249D;
+    }
 
-        .Form {
-        display: grid;
-        grid-template: 2fr 2fr;
+    #rounded-circle {
+    background-color: #F6F5F5;
+    }
 
-        }
+    .border {
+    background-color: white
+    }
+
+    btn {
+    background-color: #F9E2AF;
+    color: #4A249D;
+    }
+
+    .Form {
+    display: grid;
+    grid-template: 2fr 2fr;
+    }
+
+    .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    }
+
+    .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    }
