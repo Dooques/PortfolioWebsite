@@ -3,7 +3,6 @@ from flask_bootstrap import Bootstrap5
 import json
 import os
 import datetime
-from pomodoro_timer.pomodoro_timer_class import PomodoroTimer
 from morse_converter import Morse
 from blogAPI import get_posts
 
@@ -21,12 +20,6 @@ def index():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
-
-
-@app.route('/pomodoro-timer')
-def pomodoro_timer():
-    PomodoroTimer().run()
-    return url_for('index')
 
 
 @app.route('/download_watermark')
