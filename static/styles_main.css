@@ -49,11 +49,13 @@
     .project {
     display: flex;
     flex-wrap: wrap;
-    font-size: 1em;
     justify-content: space-between;
     border-radius: 25px;
     background-color: #F9E2AF;
     margin: 20px 0px;
+        p {
+            font-size: 0.9em;
+        }
     }
 
     .item {
