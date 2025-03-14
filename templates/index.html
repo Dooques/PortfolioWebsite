@@ -23,8 +23,6 @@
   <p>My goal is to make connections with other talented people and employ my skills to create useful and interesting projects.</p>
 </div>
 
-<br style ="padding: 20px 0px">
-
 <div class="container">
   <h3 class="title">Web Development</h3>
   <div class="skills">
@@ -66,8 +64,6 @@
   </div>
 </div>
 
-<br>
-
 <div class="container">
   <h3 class="title">Android Development</h3>
   <div class="skills">
@@ -102,13 +98,12 @@
   </div>
 </div>
 
-<br>
-
-<div class="container project-cards">
+<div class="container">
   <h3 class="title">Projects</h3>
-  <br>
 
-  <div class="project">
+  <p>Click the project Images to see the GitHub Repositories.</p>
+
+  <div class="project" id="first">
     <div class="project-text item">
       <h4>Fighting Flow App</h4>
       <p>This application will help beginners of fighting games learn the complex combos more easily</p>
@@ -119,8 +114,6 @@
       <img src="static/img/fighting_flow.png" alt="Man reading a book in a library.">
     </a>
   </div>
-
-  <br>
 
   <div class="project">
     <div class="project-text item">
@@ -135,23 +128,21 @@
     </a>
   </div>
 
-  <br>
-
   <div class="project">
     <div class="project-text item">
-      <a href="{{ url_for('achievement_collector')}}" target="_blank">
-        <h4>Achievement Collector</h4>
-      </a>
-      <p>Collect all your achievements and trophies across consoles in one place.</p>
+      <h4>Achievement Collector</h4>
+      <p>Collect all your achievements and trophies across consoles in one place. For this project I am also
+      working on an Android Native version.</p>
+      <p>Check out the projects: <a class="project-link" href="{{ url_for('achievement_collector')}}"
+                                    target="_blank">Web App</a> //
+      <a class="project-link" href="https://github.com/Dooques/AchievementHunter" target="_blank">Android App</a></p>
       <p>Tools used:</p>
-      <p>Steam Web API, SQL, Flask, Bootstrap, Requests, ElementTree</p>
+      <p>Python, Steam Web API, SQL, Flask, Bootstrap, Requests, ElementTree</p>
     </div>
-    <a href="https://github.com/Dooques/Flight-Tracker" target="_blank">
+    <a href="https://github.com/Dooques/achievement_collector" target="_blank">
       <img src="static/img/achievement_collector.png" alt="Computer on desk with shelves full of trophies around it.">
     </a>
   </div>
-
-  <br>
 
   <div class="project">
     <div class="project-text item">
@@ -159,15 +150,26 @@
       <p>This project allows you to search the internet for discount flights and provides you with a link
         to purchase a ticket.</p>
       <p>Tools used:</p>
-      <p>Requests, Twilio, Sheety API, Tequila API</p>
+      <p>Python, Requests, Twilio, Sheety API, Tequila API</p>
     </div>
     <a href="https://github.com/Dooques/Flight-Tracker" target="_blank">
       <img src="static/img/flight_tracker.png" alt="Plane taking off.">
     </a>
   </div>
-</div>
 
-<br>
+  <div class="project" id="last">
+    <div class="project-text item">
+      <h4>Morse Converter</h4>
+      <p>This project converts Text into Morse Code and vice versa.</p>
+      <p>Check out the <a class="project-link" href="{{ url_for ('morse_converter') }}" target="_blank">project</a></p>
+      <p>Tools used:</p>
+      <p>Python, CSV, Pandas</p>
+    </div>
+    <a href="https://github.com/Dooques/day_82_morse_conversion" target="_blank">
+      <img src="static/img/morse_converter.png" alt="Plane taking off.">
+    </a>
+  </div>
+</div>
 
 <div class="container">
   <div class="contactInformation">

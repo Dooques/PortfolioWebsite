@@ -19,8 +19,12 @@
     }
 
     .container{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 40px 0px;
+    }
+
+    .morse {
+    padding-left: 10%;
+    padding-right: 10%;
     }
 
     .bio {
@@ -52,10 +56,23 @@
     justify-content: space-between;
     border-radius: 25px;
     background-color: #F9E2AF;
-    margin: 20px 0px;
+    margin: 40px 0px;
         p {
-            font-size: 0.9em;
+            font-size: 1em;
         }
+    }
+
+    #first {
+    margin-top: 20px;
+    }
+
+    #last {
+    margin-bottom: 0px
+    }
+
+    .project-link {
+    text-decoration: None;
+    text-color: #009FBD;
     }
 
     .item {
@@ -64,7 +81,7 @@
 
     .project p {
     color: #3D2C1E;
-    padding:0px 10px
+    padding-left: 10px;
     }
 
     .project-text {
@@ -72,7 +89,7 @@
     }
 
     .project h4 {
-    padding: 20px 10px;
+    padding: 10px 0px 5px 10px;
     color: #3D2C1E;
     }
 
@@ -137,7 +154,7 @@
 
     .nav-pills > li > a.active {
     background-color: #F9E2AF !important;
-    color: #4A249D;
+    color: #3D2C1E;
     }
 
     #rounded-circle {
@@ -150,12 +167,24 @@
 
     btn {
     background-color: #F9E2AF;
-    color: #4A249D;
+    color: #3D2C1E;
     }
 
     .Form {
     display: grid;
     grid-template: 2fr 2fr;
+    }
+
+    .form-style {
+        textarea, textarea:focus {
+            background: #F6F5F5;
+        }
+        input, input:focus {
+            background: #F9E2AF;
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     .skills {

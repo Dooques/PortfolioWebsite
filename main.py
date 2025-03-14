@@ -4,7 +4,6 @@ import json
 import os
 import datetime
 from morse_converter import Morse
-from blogAPI import get_posts
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
@@ -27,33 +26,7 @@ def download_watermark():
     return send_file("files/Watermarker Setup.exe")
 
 
-@app.route('/download_pomodoro')
-def download_pomodoro():
-    pass
-
-
-@app.route('/blog')
-def blog():
-    posts = get_posts()['items']
-    for item in posts:
-        date = item['published'].split('T')
-        y_m_d = date[0].split('-')
-        new_date = datetime.datetime(int(y_m_d[0]), int(y_m_d[1]), int(y_m_d[2])).strftime('%d/%m/%Y')
-        item['published'] = new_date
-    return render_template('blog.html', posts=posts)
-
-
-@app.route('/post/<blog_id>')
-def post(blog_id):
-    blog_posts = get_posts()['items']
-    blog_post = ""
-    for item in blog_posts:
-        if blog_id in item['id']:
-            blog_post = item
-    return render_template('blog_post.html', blog_post=blog_post)
-
-
-@app.route('/morse-converter', methods=['GET', 'POST'])
+@app.route('/morse_converter', methods=['GET', 'POST'])
 def morse_converter():
     placeholder = "Type some text into the box and convert it to Morse Code."
     if request.method == 'POST':
