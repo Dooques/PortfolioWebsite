@@ -1,4 +1,4 @@
-flask_bootstrap
+flask-bootstrap
 Flask_CKEditor
 Flask_Login
 Flask-Gravatar
