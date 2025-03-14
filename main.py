@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, request, flash, send_file
-from flask_bootstrap import Bootstrap5
+from flask_bootstrap import Bootstrap
 import json
 import os
 import datetime
@@ -7,7 +7,7 @@ from morse_converter import Morse
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-Bootstrap5(app)
+Bootstrap(app)
 morse = Morse()
 
 
